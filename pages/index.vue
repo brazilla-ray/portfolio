@@ -56,14 +56,14 @@ export default {
 
 .primary > button {
   border: none;
+  font-size: 0.75em;
+  text-decoration: underline;
   background-color: transparent;
   font-family: 'Alata', sans-serif;
   font-size: 1.25em;
 }
 
 .secondary {
-  font-size: 0.75em;
-  text-decoration: underline;
   background-color: #56b7eb;
   grid-column: 1/3;
   display: flex;
