@@ -1,26 +1,22 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">portfolio</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+    <aside class="secondary">hello world! my name is...</aside>
+    <h1 class="primary">William Whitaker</h1>
+    <div class="links">
+      <a href="#">resume</a>
+      <a href="#">contact</a>
+    </div>
+    <aside class="secondary">I am a...</aside>
+    <h2 class="primary">developer</h2>
+    <div class="links">
+      <a href="#">projects</a>
+      <a href="#">github</a>
+      <a href="#">codepen</a>
+    </div>
+    <aside class="secondary">and an...</aside>
+    <h2 class="primary">artist</h2>
+    <div class="links">
+      <a href="https://williamwhitaker.art">williamwhitaker.art</a>
     </div>
   </div>
 </template>
@@ -33,31 +29,31 @@ export default {}
 .container {
   margin: 0 auto;
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: 35px auto 35px;
+  grid-template-rows: auto;
+  gap: 35px;
+}
+
+.primary {
+  font-size: 2em;
+  background-color: #fffff0;
+  grid-column: 1/3;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.secondary {
+  font-size: 1em;
+  background-color: #56b7eb;
+  grid-column: 2/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .links {
-  padding-top: 15px;
+  display: none;
 }
 </style>
