@@ -54,6 +54,13 @@ export default {
   align-items: center;
 }
 
+.primary > button {
+  border: none;
+  background-color: transparent;
+  font-family: 'Alata', sans-serif;
+  font-size: 1.25em;
+}
+
 .secondary {
   font-size: 1em;
   background-color: #56b7eb;
