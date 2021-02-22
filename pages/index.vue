@@ -4,7 +4,7 @@
     <div class="primary">
       <h1>William Whitaker</h1>
       <div class="links">
-        <a href="#">about</a>
+        <NuxtLink to="/about">about</NuxtLink>
         <a href="#">contact</a>
       </div>
     </div>
