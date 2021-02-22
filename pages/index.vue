@@ -1,38 +1,34 @@
 <template>
   <div class="container">
     <aside class="secondary">hello world! my name is...</aside>
-    <h1 class="primary">
-      <button @click="show = !show">William Whitaker</button>
-    </h1>
-    <transition name="slide-fade">
-      <div v-if="show" class="links">
-        <a href="#">resume</a>
+    <div class="primary">
+      <h1>William Whitaker</h1>
+      <div class="links">
+        <a href="#">about</a>
         <a href="#">contact</a>
       </div>
-    </transition>
+    </div>
     <aside class="secondary">I am a...</aside>
-    <h2 class="primary">developer</h2>
-    <div class="links">
-      <a href="#">projects</a>
-      <a href="#">github</a>
-      <a href="#">codepen</a>
+    <div class="primary">
+      <h2>developer</h2>
+      <div class="links">
+        <a href="#">projects</a>
+        <a href="#">github</a>
+        <a href="#">codepen</a>
+      </div>
     </div>
     <aside class="secondary">and an...</aside>
-    <h2 class="primary">artist</h2>
-    <div class="links">
-      <a href="https://williamwhitaker.art">williamwhitaker.art</a>
+    <div class="primary">
+      <h2>artist</h2>
+      <div class="links">
+        <a href="https://williamwhitaker.art">williamwhitaker.art</a>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      show: false,
-    }
-  },
-}
+export default {}
 </script>
 
 <style>
@@ -46,29 +42,44 @@ export default {
 }
 
 .primary {
-  font-size: 2em;
   background-color: #fffff0;
   grid-column: 2/4;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-flow: row wrap;
+}
+
+.primary > h1,
+.primary > h2 {
+  font-size: 2em;
+  font-weight: normal;
+  padding-left: 0.25em;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1 1 100%;
+  background: #00001f;
   align-items: center;
+  align-content: center;
+  flex-flow: row;
+  align-self: flex-end;
 }
 
-.primary > button {
-  border: none;
-  font-size: 0.75em;
-  text-decoration: underline;
-  background-color: transparent;
-  font-family: 'Alata', sans-serif;
-  font-size: 1.25em;
+.links > a {
+  color: #fffff0;
+  padding: 1em 3em 0 0.5em;
+  height: 100%;
 }
-
 .secondary {
   background-color: #56b7eb;
   grid-column: 1/3;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  padding-right: 0.5em;
 }
 
 .slide-fade-enter-active {
@@ -81,12 +92,5 @@ export default {
 /* .slide-fade-leave-active below version 2.1.8 */ {
   transform: translateX(10px);
   opacity: 0;
-}
-
-.links {
-  grid-column: 2/4;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 </style>
