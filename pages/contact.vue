@@ -1,21 +1,75 @@
 <template>
-  <div>
+  <div class="container">
     <page-header-vue></page-header-vue>
-    <div>
-      <p>some content</p>
-    </div>
+    <form class="contact-form" @submit.prevent="sendEmail">
+      <h1>get in touch</h1>
+      <label class="form-input-label">Name</label>
+      <input class="form-input" type="text" name="user_name" />
+      <label class="form-input-label">Email</label>
+      <input class="form-input" type="email" name="user_email" />
+      <label class="form-input-label">Message</label>
+      <textarea class="form-input" name="message"></textarea>
+      <input type="submit" value="Send" />
+    </form>
   </div>
 </template>
 
 <script>
+import emailjs from 'emailjs-com'
 import PageHeaderVue from '~/components/PageHeader.vue'
+
 export default {
-  components: { PageHeaderVue },
+  components: {
+    PageHeaderVue,
+  },
+  methods: {
+    sendEmail: (e) => {
+      emailjs
+        .sendForm(
+          'contact_service',
+          'contact_form',
+          e.target,
+          'user_OPqabWgigbbWbuhIrLAhj'
+        )
+        .then(
+          (result) => {
+            console.log('SUCCESS!', result.status, result.text)
+          },
+          (error) => {
+            console.log('FAILED...', error)
+          }
+        )
+    },
+  },
 }
 </script>
 
 <style scoped>
-p {
-  color: #fffff0;
+.container {
+  margin: 35px auto 0;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #56b7eb;
+  font-size: 1.5em;
+  align-self: flex-start;
+}
+
+.contact-form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.form-input {
+  width: 75%;
+  border: none;
+  height: 3em;
+}
+
+.form-input-label {
+  margin: 2em 0 1em;
+  color: #56b7eb;
 }
 </style>
