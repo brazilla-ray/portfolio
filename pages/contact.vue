@@ -23,7 +23,7 @@
         name="message"
         placeholder="type your message here"
       ></textarea>
-      <input type="submit" value="Send" />
+      <input class="message-submit" type="submit" value="Send" />
     </form>
   </div>
 </template>
@@ -77,6 +77,11 @@ export default {
   font-family: 'Alata', sans-serif;
 }
 
+.form-input-label {
+  margin: 2em 0 1em;
+  color: #56b7eb;
+}
+
 .message-input {
   height: 35vh;
   border: none;
@@ -84,8 +89,13 @@ export default {
   color: #00001f;
 }
 
-.form-input-label {
-  margin: 2em 0 1em;
+.message-submit {
+  border: 3px solid #56b7eb;
+  font-size: 2em;
   color: #56b7eb;
+  background-color: #00001f;
+  font-family: 'Alata', sans-serif;
+  margin-top: 17.5px;
+  border-radius: 10%;
 }
 </style>
