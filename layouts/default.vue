@@ -26,6 +26,13 @@ html {
 
 body {
   background-color: #00001f;
+  background-image: linear-gradient(
+    rgba(0, 0, 31, 0.5),
+    rgba(0, 0, 31, 0.5),
+    rgba(0, 0, 31, 0.5),
+    rgba(0, 0, 31, 0.5),
+    rgba(255, 255, 240, 0.5)
+  );
 }
 
 .container {
