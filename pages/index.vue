@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="grid-container">
-      <aside class="secondary">hello world! my name is...</aside>
+      <aside class="secondary pull-left">hello world! my name is...</aside>
       <div class="primary">
         <h1>William Whitaker</h1>
         <div class="links">
@@ -9,14 +9,14 @@
           <NuxtLink to="/contact">contact</NuxtLink>
         </div>
       </div>
-      <aside class="secondary">I am a...</aside>
+      <aside class="secondary pull-right">I am a...</aside>
       <div class="primary">
         <h2>developer</h2>
         <div class="links">
           <NuxtLink to="/projects">projects</NuxtLink>
         </div>
       </div>
-      <aside class="secondary">and an...</aside>
+      <aside class="secondary pull-left">and an...</aside>
       <div class="primary">
         <h2>artist</h2>
         <div class="links">
@@ -41,11 +41,12 @@ export default {}
 
 .primary {
   background-color: #fffff0;
-  grid-column: 2/8;
+  grid-column: 1/8;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-end;
   flex-flow: row wrap;
+  height: 12vh;
 }
 
 .primary > h1,
@@ -78,22 +79,18 @@ export default {}
 
 .secondary {
   background-color: #56b7eb;
-  grid-column: 1/7;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  padding-right: 0.5em;
+  padding: 0 1.5em;
+  height: 10vh;
 }
 
-.slide-fade-enter-active {
-  transition: all 0.3s ease;
+.pull-left {
+  grid-column: 1/7;
 }
-.slide-fade-leave-active {
-  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
-}
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active below version 2.1.8 */ {
-  transform: translateX(10px);
-  opacity: 0;
+
+.pull-right {
+  grid-column: 2/8;
 }
 </style>

@@ -27,6 +27,10 @@ article {
   color: #fffff0;
 }
 
+.nuxt-content-container {
+  margin-top: 17.5px;
+}
+
 .nuxt-content {
   line-height: 1.5;
 }
