@@ -1,11 +1,16 @@
 <template>
-  <article>
-    <nuxt-content :document="page" />
-  </article>
+  <div>
+    <page-header-vue></page-header-vue>
+    <article>
+      <nuxt-content :document="page" />
+    </article>
+  </div>
 </template>
 
 <script>
+import PageHeaderVue from '~/components/PageHeader.vue'
 export default {
+  components: { PageHeaderVue },
   async asyncData({ $content }) {
     const page = await $content('about').fetch()
 

@@ -5,7 +5,7 @@
       <h1>William Whitaker</h1>
       <div class="links">
         <NuxtLink to="/about">about</NuxtLink>
-        <a href="#">contact</a>
+        <NuxtLink to="/contact">contact</NuxtLink>
       </div>
     </div>
     <aside class="secondary">I am a...</aside>
