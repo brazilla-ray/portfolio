@@ -5,6 +5,7 @@
         <NuxtLink to="/">home</NuxtLink>
         <NuxtLink to="/about">about</NuxtLink>
         <NuxtLink to="/contact">contact</NuxtLink>
+        <NuxtLink to="/projects">projects</NuxtLink>
       </nav>
     </header>
   </div>
@@ -18,7 +19,7 @@ export default {}
 nav {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 nav > a {
