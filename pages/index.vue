@@ -34,14 +34,14 @@ export default {}
 <style scoped>
 .grid-container {
   display: grid;
-  grid-template-columns: 35px 50%;
+  grid-template-columns: auto;
   grid-template-rows: auto;
   gap: 35px;
 }
 
 .primary {
   background-color: #fffff0;
-  grid-column: 2/4;
+  grid-column: 2/8;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -52,12 +52,12 @@ export default {}
 .primary > h2 {
   font-size: 2em;
   font-weight: normal;
-  padding-left: 0.25em;
+  padding: 0 3px 0;
 }
 
 .links {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   flex: 1 1 100%;
   background: #00001f;
   align-items: center;
@@ -68,12 +68,17 @@ export default {}
 
 .links > a {
   color: #fffff0;
-  padding: 1em 3em 0 0.5em;
   height: 100%;
+  padding-right: 3em;
 }
+
+.links > a:last-child {
+  padding-right: 3px;
+}
+
 .secondary {
   background-color: #56b7eb;
-  grid-column: 1/3;
+  grid-column: 1/7;
   display: flex;
   justify-content: flex-end;
   align-items: center;
