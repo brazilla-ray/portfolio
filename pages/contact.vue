@@ -45,11 +45,6 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  margin: 35px auto 0;
-  min-height: 100vh;
-}
-
 h1 {
   color: #56b7eb;
   font-size: 1.5em;

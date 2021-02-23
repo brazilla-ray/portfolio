@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <page-header-vue></page-header-vue>
     <article>
       <nuxt-content :document="page" />

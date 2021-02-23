@@ -1,27 +1,27 @@
 <template>
   <div class="container">
-    <aside class="secondary">hello world! my name is...</aside>
-    <div class="primary">
-      <h1>William Whitaker</h1>
-      <div class="links">
-        <NuxtLink to="/about">about</NuxtLink>
-        <NuxtLink to="/contact">contact</NuxtLink>
+    <div class="grid-container">
+      <aside class="secondary">hello world! my name is...</aside>
+      <div class="primary">
+        <h1>William Whitaker</h1>
+        <div class="links">
+          <NuxtLink to="/about">about</NuxtLink>
+          <NuxtLink to="/contact">contact</NuxtLink>
+        </div>
       </div>
-    </div>
-    <aside class="secondary">I am a...</aside>
-    <div class="primary">
-      <h2>developer</h2>
-      <div class="links">
-        <a href="#">projects</a>
-        <a href="#">github</a>
-        <a href="#">codepen</a>
+      <aside class="secondary">I am a...</aside>
+      <div class="primary">
+        <h2>developer</h2>
+        <div class="links">
+          <NuxtLink to="/projects">projects</NuxtLink>
+        </div>
       </div>
-    </div>
-    <aside class="secondary">and an...</aside>
-    <div class="primary">
-      <h2>artist</h2>
-      <div class="links">
-        <a href="https://williamwhitaker.art">williamwhitaker.art</a>
+      <aside class="secondary">and an...</aside>
+      <div class="primary">
+        <h2>artist</h2>
+        <div class="links">
+          <a href="https://williamwhitaker.art">williamwhitaker.art</a>
+        </div>
       </div>
     </div>
   </div>
@@ -31,12 +31,10 @@
 export default {}
 </script>
 
-<style>
-.container {
-  margin: 35px auto 0;
-  min-height: 100vh;
+<style scoped>
+.grid-container {
   display: grid;
-  grid-template-columns: 35px auto 35px;
+  grid-template-columns: 35px 50%;
   grid-template-rows: auto;
   gap: 35px;
 }
@@ -64,7 +62,7 @@ export default {}
   background: #00001f;
   align-items: center;
   align-content: center;
-  flex-flow: row;
+  flex-flow: row wrap;
   align-self: flex-end;
 }
 

@@ -27,4 +27,10 @@ html {
 body {
   background-color: #00001f;
 }
+
+.container {
+  width: calc(100% - 70px);
+  margin: 35px auto 0;
+  min-height: 100vh;
+}
 </style>
