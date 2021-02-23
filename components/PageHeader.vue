@@ -18,6 +18,18 @@ export default {}
 nav {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+nav > a {
+  color: #fffff0;
+}
+
+.nuxt-link-active {
+  color: #fffff0;
+}
+
+.nuxt-link-exact-active {
+  color: #56b7eb;
 }
 </style>

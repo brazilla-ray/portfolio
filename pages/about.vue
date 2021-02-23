@@ -40,6 +40,6 @@ article {
 }
 
 .nuxt-content > p > a {
-  color: #fffff0;
+  color: #56b7eb;
 }
 </style>

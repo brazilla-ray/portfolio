@@ -1,6 +1,9 @@
 <template>
   <div>
     <page-header-vue></page-header-vue>
+    <div>
+      <p>some content</p>
+    </div>
   </div>
 </template>
 
@@ -11,4 +14,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+p {
+  color: #fffff0;
+}
+</style>
