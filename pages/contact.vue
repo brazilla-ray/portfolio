@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <page-header-vue></page-header-vue>
+    <h1 class="page-title">get in touch</h1>
     <form class="contact-form" @submit.prevent="sendEmail">
-      <h1>get in touch</h1>
       <label class="form-input-label">Name</label>
       <input class="form-input" type="text" name="user_name" />
       <label class="form-input-label">Email</label>
@@ -45,12 +45,6 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  color: #56b7eb;
-  font-size: 1.5em;
-  align-self: flex-start;
-}
-
 .contact-form {
   display: flex;
   flex-flow: column;

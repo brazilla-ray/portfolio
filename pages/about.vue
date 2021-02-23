@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <page-header-vue></page-header-vue>
+    <h1 class="page-title">about me</h1>
     <article>
       <nuxt-content :document="page" />
     </article>
@@ -26,17 +27,8 @@ article {
   color: #fffff0;
 }
 
-.nuxt-content-container {
-  width: 75%;
-  margin: 35px auto 0;
-}
-
 .nuxt-content {
   line-height: 1.5;
-}
-
-.nuxt-content > h1 {
-  color: #56b7eb;
 }
 
 .nuxt-content > p > a {

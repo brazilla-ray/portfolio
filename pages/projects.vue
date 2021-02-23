@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <page-header-vue></page-header-vue>
-    <h1>projects</h1>
+    <h1 class="page-title">projects</h1>
   </div>
 </template>
 

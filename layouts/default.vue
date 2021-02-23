@@ -33,4 +33,8 @@ body {
   margin: 35px auto 0;
   min-height: 100vh;
 }
+
+.page-title {
+  color: #56b7eb;
+}
 </style>
