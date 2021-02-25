@@ -105,6 +105,10 @@ export default {
   margin-right: -35px;
 }
 
+page-header-vue {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   /* TODO: improve on this. maybe conditional classes 
   *  based on window size. */
