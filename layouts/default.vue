@@ -38,4 +38,18 @@ body {
   color: #56b7eb;
   margin-top: 35px;
 }
+
+.section-title {
+  color: #56b7eb;
+  margin-top: 35px;
+  font-size: 1em;
+}
+
+.section-content {
+  color: #fffff0;
+  font-size: 1em;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
 </style>
