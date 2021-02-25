@@ -105,7 +105,7 @@ export default {
   margin-right: -35px;
 }
 
-page-header-vue {
+/deep/ header {
   display: none;
 }
 
@@ -136,10 +136,6 @@ page-header-vue {
     font-weight: normal;
     padding: 0 1em 0;
   }
-  /* 
-  .primary:last-child {
-    width: 25%;
-  } */
 
   .secondary {
     margin: calc(75vh / 3) 0 0 -35px;
