@@ -6,7 +6,7 @@
         <p>hello world! my name is...</p>
       </aside>
       <div class="primary">
-        <h1>William Whitaker</h1>
+        <h1><NuxtLink to="/about">William Whitaker</NuxtLink></h1>
         <div class="links">
           <NuxtLink to="/about">about</NuxtLink>
           <NuxtLink to="/contact">contact</NuxtLink>
@@ -14,14 +14,14 @@
       </div>
       <aside class="secondary pull-right"><p>I am a...</p></aside>
       <div class="primary">
-        <h2>developer</h2>
+        <h2><NuxtLink to="/projects">developer</NuxtLink></h2>
         <div class="links">
           <NuxtLink to="/projects">projects</NuxtLink>
         </div>
       </div>
       <aside class="secondary pull-left"><p>and an...</p></aside>
       <div class="primary">
-        <h2>artist</h2>
+        <h2><a href="https://williamwhitaker.art">artist</a></h2>
         <div class="links">
           <a href="https://williamwhitaker.art">williamwhitaker.art</a>
         </div>
@@ -39,6 +39,11 @@ export default {
 </script>
 
 <style scoped>
+h1 > a{
+  text-decoration: none;
+  color: #00001f;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto;
