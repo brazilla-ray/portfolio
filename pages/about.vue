@@ -1,10 +1,12 @@
 <template>
   <div class="container">
     <page-header-vue></page-header-vue>
-    <h1 class="page-title">about me</h1>
-    <article>
-      <nuxt-content :document="page" />
-    </article>
+    <div class="content-wrapper">
+      <h1 class="page-title">about me</h1>
+      <article>
+        <nuxt-content :document="page" />
+      </article>
+    </div>
   </div>
 </template>
 

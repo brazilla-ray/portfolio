@@ -1,30 +1,32 @@
 <template>
   <div class="container">
     <page-header-vue></page-header-vue>
-    <h1 class="page-title">get in touch</h1>
-    <form class="contact-form" @submit.prevent="sendEmail">
-      <label class="form-input-label">Name</label>
-      <input
-        class="form-input"
-        type="text"
-        name="user_name"
-        placeholder="name"
-      />
-      <label class="form-input-label">Email</label>
-      <input
-        class="form-input"
-        type="email"
-        name="user_email"
-        placeholder="email"
-      />
-      <label class="form-input-label">Message</label>
-      <textarea
-        class="message-input"
-        name="message"
-        placeholder="type your message here"
-      ></textarea>
-      <input class="message-submit" type="submit" value="Send" />
-    </form>
+    <div class="content-wrapper">
+      <h1 class="page-title">get in touch</h1>
+      <form class="contact-form" @submit.prevent="sendEmail">
+        <label class="form-input-label">Name</label>
+        <input
+          class="form-input"
+          type="text"
+          name="user_name"
+          placeholder="name"
+        />
+        <label class="form-input-label">Email</label>
+        <input
+          class="form-input"
+          type="email"
+          name="user_email"
+          placeholder="email"
+        />
+        <label class="form-input-label">Message</label>
+        <textarea
+          class="message-input"
+          name="message"
+          placeholder="type your message here"
+        ></textarea>
+        <input class="message-submit" type="submit" value="Send" />
+      </form>
+    </div>
   </div>
 </template>
 
