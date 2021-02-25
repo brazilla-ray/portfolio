@@ -58,18 +58,19 @@ export default {}
 
 .links {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex: 1 1 100%;
   background: #00001f;
   align-items: center;
   align-content: center;
   flex-flow: row wrap;
   align-self: flex-end;
+  font-size: 1.75em;
+  margin-top: 17.5px;
 }
 
 .links > a {
   color: #fffff0;
-  height: 100%;
   padding-right: 3em;
 }
 
@@ -79,6 +80,7 @@ export default {}
 
 .secondary {
   background-color: #56b7eb;
+  font-size: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,10 +89,12 @@ export default {}
 }
 
 .pull-left {
-  grid-column: 1/7;
+  grid-column: 1/8;
+  margin-left: -35px;
 }
 
 .pull-right {
-  grid-column: 2/8;
+  grid-column: 1/8;
+  margin-right: -35px;
 }
 </style>
