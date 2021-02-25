@@ -84,7 +84,7 @@ export default {}
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 1.5em;
+  padding: 1.5em;
   height: 10vh;
 }
 
