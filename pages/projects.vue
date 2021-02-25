@@ -13,7 +13,7 @@
         <a href="https://brazilla-ray.github.io/first-site/">
           <img
             class="screenshot"
-            src="~/static/first_site.png"
+            src="~/static/JPEG/first_site.jpg"
             alt="my first website"
           />
         </a>
@@ -24,7 +24,7 @@
         </p>
         <img
           class="screenshot"
-          src="~/static/mrww_v1.png"
+          src="~/static/JPEG/mrww_v1.jpg"
           alt="drupal site version 1"
         />
         <p>
@@ -33,13 +33,13 @@
         </p>
         <img
           class="screenshot"
-          src="~/static/mrww_v2.png"
+          src="~/static/JPEG/mrww_v2.jpg"
           alt="drupal site 2013"
         />
         <p>At one point, I decided to learn Ruby on Rails.</p>
         <img
           class="screenshot"
-          src="~/static/mrww_v3.png"
+          src="~/static/JPEG/mrww_v3.jpg"
           alt="rails site 2014"
         />
         <p>
@@ -49,7 +49,7 @@
         <a href="https://williamwhitaker.art">
           <img
             class="screenshot"
-            src="~/static/current_site.png"
+            src="~/static/JPEG/current_site.jpg"
             alt="current site"
           />
         </a>
@@ -75,7 +75,7 @@
         </p>
         <img
           class="screenshot"
-          src="~/static/sar_sketch.png"
+          src="~/static/JPEG/sar_sketch.jpg"
           alt="sarApp sketch"
         />
         <p>I really need to get back to work on that one.</p>
@@ -87,7 +87,7 @@
         </p>
         <img
           class="screenshot"
-          src="~/static/wedding_site.png"
+          src="~/static/JPEG/wedding_site.jpg"
           alt="wedding site"
         />
       </article>
@@ -117,5 +117,8 @@ article > p > a {
 .screenshot {
   width: 250px;
   margin-top: 35px;
+  border-radius: 5%;
+  border: 3px solid #11111a;
+  padding: 3px;
 }
 </style>
