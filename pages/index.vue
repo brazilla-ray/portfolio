@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style scoped>
-h1 > a{
+h1 > a {
   text-decoration: none;
   color: #00001f;
 }
