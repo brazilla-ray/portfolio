@@ -97,4 +97,42 @@ export default {}
   grid-column: 1/8;
   margin-right: -35px;
 }
+
+@media screen and (min-width: 1024px) {
+  /* TODO: improve on this. maybe conditional classes 
+  *  based on window size. */
+  .grid-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .primary,
+  .secondary {
+    height: 50vh;
+    width: calc(100vw / 3);
+  }
+
+  .primary {
+    margin: calc(75vh / 2) -35px;
+    justify-content: flex-start;
+  }
+
+  .primary > h1,
+  .primary > h2 {
+    font-size: 2em;
+    font-weight: normal;
+    padding: 0 1em 0;
+  }
+
+  .secondary {
+    margin: calc(75vh / 3) -35px;
+  }
+
+  .links {
+    font-size: 1em;
+    margin-top: 0;
+    width: 100%;
+  }
+}
 </style>

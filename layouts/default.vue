@@ -52,4 +52,11 @@ body {
   flex-flow: column wrap;
   align-items: center;
 }
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+    margin: auto 0;
+  }
+}
 </style>
