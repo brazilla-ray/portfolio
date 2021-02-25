@@ -149,5 +149,9 @@ export default {
   .links {
     display: none;
   }
+
+  /deep/ header {
+    display: block;
+  }
 }
 </style>
