@@ -1,7 +1,10 @@
 <template>
   <div class="container">
+    <page-header-vue></page-header-vue>
     <div class="grid-container">
-      <aside class="secondary pull-left">hello world! my name is...</aside>
+      <aside class="secondary pull-left">
+        <p>hello world! my name is...</p>
+      </aside>
       <div class="primary">
         <h1>William Whitaker</h1>
         <div class="links">
@@ -9,14 +12,14 @@
           <NuxtLink to="/contact">contact</NuxtLink>
         </div>
       </div>
-      <aside class="secondary pull-right">I am a...</aside>
+      <aside class="secondary pull-right"><p>I am a...</p></aside>
       <div class="primary">
         <h2>developer</h2>
         <div class="links">
           <NuxtLink to="/projects">projects</NuxtLink>
         </div>
       </div>
-      <aside class="secondary pull-left">and an...</aside>
+      <aside class="secondary pull-left"><p>and an...</p></aside>
       <div class="primary">
         <h2>artist</h2>
         <div class="links">
@@ -28,7 +31,11 @@
 </template>
 
 <script>
-export default {}
+import PageHeaderVue from '~/components/PageHeader.vue'
+
+export default {
+  components: { PageHeaderVue },
+}
 </script>
 
 <style scoped>
@@ -66,7 +73,7 @@ export default {}
   flex-flow: row wrap;
   align-self: flex-end;
   font-size: 1.75em;
-  margin-top: 17.5px;
+  margin: 0;
 }
 
 .links > a {
@@ -114,8 +121,9 @@ export default {}
   }
 
   .primary {
-    margin: calc(75vh / 2) -35px;
-    justify-content: flex-start;
+    margin: calc(75vh / 2) 0 0 -35px;
+    justify-content: center;
+    align-items: center;
   }
 
   .primary > h1,
@@ -124,15 +132,22 @@ export default {}
     font-weight: normal;
     padding: 0 1em 0;
   }
+  /* 
+  .primary:last-child {
+    width: 25%;
+  } */
 
   .secondary {
-    margin: calc(75vh / 3) -35px;
+    margin: calc(75vh / 3) 0 0 -35px;
+    justify-content: flex-start;
+  }
+
+  .secondary > p {
+    padding-left: 1em;
   }
 
   .links {
-    font-size: 1em;
-    margin-top: 0;
-    width: 100%;
+    display: none;
   }
 }
 </style>

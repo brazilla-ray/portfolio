@@ -56,7 +56,7 @@ body {
 @media screen and (min-width: 1024px) {
   .container {
     width: 100%;
-    margin: auto 0;
+    height: 100vh;
   }
 }
 </style>

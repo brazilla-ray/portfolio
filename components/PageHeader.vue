@@ -33,4 +33,10 @@ nav > a {
 .nuxt-link-exact-active {
   color: #56b7eb;
 }
+
+@media screen and (min-width: 1024px) {
+  nav {
+    justify-content: space-around;
+  }
+}
 </style>
