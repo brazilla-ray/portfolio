@@ -88,3 +88,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# GitHub repo card
+desktop_screenshot.png

@@ -79,7 +79,7 @@ h2 > a {
   flex-flow: row wrap;
   align-self: flex-end;
   font-size: 1.75em;
-  margin: 0;
+  /* margin: 0; */
 }
 
 .links > a {
@@ -115,6 +115,11 @@ h2 > a {
   display: none;
 }
 
+@media screen and (min-width: 667px) {
+  .secondary {
+    margin-top: 17.5px;
+  }
+}
 @media screen and (min-width: 1024px) {
   /* TODO: improve on this. maybe conditional classes 
   *  based on window size. */
