@@ -42,7 +42,7 @@ export default {
 h1 > a,
 h2 > a {
   text-decoration: none;
-  color: #00001f;
+  color: $near-black;
 }
 
 .grid-container {
