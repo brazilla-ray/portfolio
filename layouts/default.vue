@@ -28,11 +28,11 @@ body {
   background-color: $near-black;
 }
 
-.container {
+/*.container {
   width: calc(100% - 70px);
   margin: 35px auto 35px;
   min-height: 100vh;
-}
+}*/
 
 .page-title {
   color: #56b7eb;
