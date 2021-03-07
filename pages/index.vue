@@ -38,7 +38,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 h1 > a,
 h2 > a {
   text-decoration: none;
@@ -111,10 +111,6 @@ h2 > a {
   margin-right: -35px;
 }
 
-/deep/ header {
-  display: none;
-}
-
 @media screen and (min-width: 667px) {
   .secondary {
     margin-top: 17.5px;
@@ -159,10 +155,6 @@ h2 > a {
 
   .links {
     display: none;
-  }
-
-  /deep/ header {
-    display: block;
   }
 }
 </style>
