@@ -108,7 +108,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 article > p {
   margin-top: 35px;
 }

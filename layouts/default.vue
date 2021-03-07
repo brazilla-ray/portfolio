@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 html {
   font-family: 'Alata', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  background-color: #00001f;
+  background-color: $near-black;
 }
 
 .container {
@@ -46,7 +46,7 @@ body {
 }
 
 .section-content {
-  color: #fffff0;
+  color: $near-white;
   font-size: 1em;
   display: flex;
   flex-flow: column wrap;

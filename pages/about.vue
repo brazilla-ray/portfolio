@@ -24,9 +24,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 article {
-  color: #fffff0;
+  color: $near-white;
 }
 
 .nuxt-content-container {

@@ -15,7 +15,7 @@
 export default {}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 nav {
   display: flex;
   flex-flow: row wrap;
@@ -23,11 +23,11 @@ nav {
 }
 
 nav > a {
-  color: #fffff0;
+  color: $near-white;
 }
 
 .nuxt-link-active {
-  color: #fffff0;
+  color: $near-white;
 }
 
 .nuxt-link-exact-active {

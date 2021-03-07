@@ -60,7 +60,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .contact-form {
   display: flex;
   flex-flow: column;
@@ -72,9 +72,9 @@ export default {
   width: 100%;
   border: none;
   height: 5vh;
-  background-color: #00001f;
-  color: #fffff0;
-  border-bottom: 3px solid #fffff0;
+  background-color: $near-black;
+  color: $near-white;
+  border-bottom: 3px solid $near-white;
   font-size: 1em;
   font-family: 'Alata', sans-serif;
 }
@@ -87,15 +87,15 @@ export default {
 .message-input {
   height: 35vh;
   border: none;
-  background-color: #fffff0;
-  color: #00001f;
+  background-color: $near-white;
+  color: $near-black;
 }
 
 .message-submit {
   border: 3px solid #56b7eb;
   font-size: 2em;
   color: #56b7eb;
-  background-color: #00001f;
+  background-color: $near-black;
   font-family: 'Alata', sans-serif;
   margin-top: 17.5px;
   border-radius: 10%;
