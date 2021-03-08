@@ -32,7 +32,7 @@
 
 .grid-container::after {
   content: '';
-  background-color: $blue-dark;
+  background-color: $green;
   grid-column: 1;
   grid-row: 4;
 }
@@ -43,14 +43,14 @@
 
 .with-text {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   text-decoration: none;
 }
 
 .with-text h1,
 .with-text h2 {
-  font-size: 2em;
-  padding: 0.25em 0 0.5em;
+  font-size: 2rem;
+  padding: 0.5em;
 }
 
 .box-1 {
@@ -74,6 +74,12 @@
   align-self: flex-end;
 }
 
+.title::before {
+  content: '';
+  width: 40%;
+  display: block;
+}
+
 .projects {
   background-color: $blue;
   color: rgb(0, 0, 31);
@@ -93,8 +99,14 @@
   color: rgb(0, 0, 31);
 }
 
+.contact::before {
+  content: '';
+  width: 40%;
+  display: block;
+}
+
 .box-7 {
-  background-color: $blue-dark;
+  background-color: $green;
   transform: skewX(15deg);
   transform-origin: top;
   grid-column: 1;
