@@ -26,13 +26,19 @@
 <style lang="scss" scoped>
 .grid-container {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 15vh 25vh 25vh 85vh;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 15vh 25vh 25vh 45vh;
+}
+
+.grid-container::after {
+  content: '';
+  background-color: $blue-dark;
+  grid-column: 1;
+  grid-row: 4;
 }
 
 .grid-boxes {
   height: auto;
-  width: 11.719em;
 }
 
 .with-text {
@@ -44,6 +50,7 @@
 .with-text h1,
 .with-text h2 {
   font-size: 2em;
+  padding: 0.25em 0 0.5em;
 }
 
 .box-1 {
@@ -65,7 +72,6 @@
 
 .title h1 {
   align-self: flex-end;
-  padding-left: 1.5em;
 }
 
 .projects {
@@ -87,15 +93,11 @@
   color: rgb(0, 0, 31);
 }
 
-.contact h2 {
-  padding-left: 2em;
-}
-
 .box-7 {
-  background-color: $blue-trans;
-}
-
-.box-8 {
-  background: linear-gradient(64.5deg, $blue-trans 59%, transparent 0) top left;
+  background-color: $blue-dark;
+  transform: skewX(15deg);
+  transform-origin: top;
+  grid-column: 1;
+  grid-row: 4;
 }
 </style>
