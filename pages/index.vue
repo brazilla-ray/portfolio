@@ -1,8 +1,6 @@
 <template>
   <div class="container">
     <div class="grid-container">
-      <div class="grid-boxes box-1"></div>
-      <div class="grid-boxes box-2"></div>
       <NuxtLink to="/" class="grid-boxes with-text title">
         <h1>William Whitaker</h1>
       </NuxtLink>
@@ -15,8 +13,6 @@
       <NuxtLink to="/contact" class="grid-boxes with-text contact">
         <h2>contact</h2>
       </NuxtLink>
-      <div class="grid-boxes box-7"></div>
-      <div class="grid-boxes box-8"></div>
     </div>
   </div>
 </template>
@@ -26,14 +22,25 @@
 <style lang="scss" scoped>
 .grid-container {
   display: grid;
-  grid-template-columns: 50vw 50vw;
+  grid-template-columns: repeat(4, 25vw);
   grid-template-rows: 15vh 25vh 25vh 45vh;
+}
+
+.grid-container::before {
+  content: '';
+  background-color: $blue-trans;
+  grid-column: 3/5;
+  grid-row: 1;
+  transform: skewX(45deg);
+  transform-origin: bottom;
 }
 
 .grid-container::after {
   content: '';
   background-color: $green;
-  grid-column: 1;
+  transform: skewX(15deg) translateX(-33.3%);
+  transform-origin: top;
+  grid-column: 1/4;
   grid-row: 4;
 }
 
@@ -53,21 +60,11 @@
   padding: 0.5em;
 }
 
-.box-1 {
-  background-color: $warm-gray-trans;
-  transform: skewX(45deg);
-  transform-origin: bottom;
-}
-
-.box-2 {
-  background-color: $blue-trans;
-  transform: skewX(45deg);
-  transform-origin: bottom;
-}
-
 .title {
   color: $near-white;
   background-color: $warm-gray;
+  grid-column: 1/3;
+  grid-row: 2;
 }
 
 .title h1 {
@@ -80,14 +77,31 @@
   display: block;
 }
 
+.title::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 15vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skewX(45deg);
+  transform-origin: bottom;
+  background-color: $warm-gray-trans;
+}
+
 .projects {
   background-color: $blue;
   color: rgb(0, 0, 31);
+  grid-column: 3/5;
+  grid-row: 2;
 }
 
 .about {
   background-color: $near-white;
   color: rgb(0, 0, 31);
+  grid-column: 1/3;
+  grid-row: 3;
 }
 
 .about h2 {
@@ -97,19 +111,13 @@
 .contact {
   background-color: $yellow;
   color: rgb(0, 0, 31);
+  grid-column: 3/5;
+  grid-row: 3;
 }
 
 .contact::before {
   content: '';
   width: 40%;
   display: block;
-}
-
-.box-7 {
-  background-color: $green;
-  transform: skewX(15deg);
-  transform-origin: top;
-  grid-column: 1;
-  grid-row: 4;
 }
 </style>
