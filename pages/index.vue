@@ -37,7 +37,7 @@
 
 .grid-container::after {
   content: '';
-  background-color: $green;
+  background-color: $blue-trans;
   transform: skewX(15deg) translateX(-33.3%);
   transform-origin: top;
   grid-column: 1/4;
