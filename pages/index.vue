@@ -120,4 +120,44 @@
   width: 40%;
   display: block;
 }
+
+@media screen and (min-width: 568px) {
+  .grid-container {
+    grid-template-rows: 15vh 35vh 35vh 20vh;
+  }
+
+  .grid-container::before {
+    grid-column: 3/4;
+    grid-row: 4;
+    transform: skewX(15deg);
+    transform-origin: top;
+  }
+
+  .grid-container::after {
+    grid-column: 4;
+    grid-row: 1/3;
+    transform: skewX(340deg);
+    transform-origin: bottom;
+  }
+
+  .title {
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+
+  .projects {
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .about {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .contact {
+    grid-column: 4;
+    grid-row: 3;
+  }
+}
 </style>
