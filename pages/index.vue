@@ -20,7 +20,7 @@
 <style lang="scss" scoped>
 .grid-container::before {
   content: '';
-  background-color: $warm-gray-trans;
+  background: linear-gradient(22.5deg, $warm-gray-trans, $near-black);
   grid-column: 1/17;
   grid-row: 1/3;
   transform: skewX(315deg);

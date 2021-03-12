@@ -25,12 +25,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.grid-container::before {
+  background: linear-gradient(45deg, $near-black, $near-white-trans);
+}
+
+.page-title {
+  background-color: $near-white-quarter-trans;
+}
+
 article {
   color: $near-white;
 }
 
 .nuxt-content-container {
-  margin-top: 17.5px;
+  margin-top: 6.25vh;
+  width: 75vw;
 }
 
 .nuxt-content {
