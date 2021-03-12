@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <page-header-vue></page-header-vue>
+  <div class="grid-container">
+    <page-header-vue class="page-header"></page-header-vue>
     <div class="content-wrapper">
       <h1 class="page-title">about me</h1>
       <article>
