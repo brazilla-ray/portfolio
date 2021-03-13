@@ -109,6 +109,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.grid-container::after {
+  background-color: $blue;
+  grid-column: 8/12;
+}
+
 article > p {
   margin-top: 35px;
 }

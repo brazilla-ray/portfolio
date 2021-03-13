@@ -31,6 +31,7 @@ nav > a {
 }
 
 .nuxt-link-exact-active {
-  color: #56b7eb;
+  color: $blue;
+  font-size: 2em;
 }
 </style>

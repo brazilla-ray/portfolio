@@ -2,7 +2,9 @@
   <div class="grid-container">
     <page-header-vue class="page-header"></page-header-vue>
     <div class="content-wrapper">
-      <h1 class="page-title">about me</h1>
+      <div class="page-title">
+        <h1>about me</h1>
+      </div>
       <article>
         <nuxt-content :document="page" />
       </article>
@@ -25,21 +27,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.grid-container::before {
-  background: linear-gradient(45deg, $near-black, $near-white-trans);
-}
-
-.page-title {
-  background-color: $near-white-quarter-trans;
-}
-
-article {
-  color: $near-white;
-}
-
-.nuxt-content-container {
-  margin-top: 6.25vh;
-  width: 75vw;
+.grid-container::after {
+  background-color: $near-white;
+  grid-column: 3/8;
 }
 
 .nuxt-content {
@@ -47,6 +37,6 @@ article {
 }
 
 .nuxt-content > p > a {
-  color: #56b7eb;
+  color: $blue;
 }
 </style>

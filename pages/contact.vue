@@ -61,6 +61,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.grid-container::after {
+  background-color: $yellow;
+}
+
 .contact-form {
   display: flex;
   flex-flow: column;

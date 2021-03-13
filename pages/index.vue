@@ -12,6 +12,13 @@
     <NuxtLink to="/contact" class="grid-boxes with-text contact">
       <h2>contact</h2>
     </NuxtLink>
+    <div class="grid-boxes message">
+      <h3>work in progress:</h3>
+      <p>
+        I have decided to publish this site 'as-is', even though it's not
+        'ready'.
+      </p>
+    </div>
   </div>
 </template>
 
@@ -20,7 +27,7 @@
 <style lang="scss" scoped>
 .grid-container::before {
   content: '';
-  background: linear-gradient(22.5deg, $warm-gray-trans, $near-black);
+  background-color: $warm-gray-dark;
   grid-column: 1/17;
   grid-row: 1/3;
   transform: skewX(315deg);
@@ -79,6 +86,12 @@
   color: rgb(0, 0, 31);
   grid-column: 10/17;
   grid-row: 12/16;
+}
+
+.message {
+  grid-column: 2/10;
+  grid-row: 12/16;
+  color: red;
 }
 
 @media screen and (min-width: 568px) {

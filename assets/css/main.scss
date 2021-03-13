@@ -26,11 +26,17 @@ body {
   background-color: $near-black;
 }
 
+article {
+  color: $near-white;
+  margin-top: 3.125vh;
+  width: 75vw;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(16, 6.25vw);
   grid-template-rows: repeat(16, 6.25vh);
-  // overflow: hidden;
+  overflow-x: hidden;
 }
 
 .page-header {
@@ -39,8 +45,9 @@ body {
 }
 
 .page-title {
-  color: $blue;
-  padding-left: 0.25em;
+  background-color: $warm-gray;
+  color: $warm-gray;
+  padding: 0 0 0.25em 0.25em;
 }
 
 .content-wrapper {
@@ -53,9 +60,23 @@ body {
 
 .grid-container::before {
   content: '';
+  background-color: $warm-gray-dark;
   grid-column: 3/17;
   grid-row: 1/4;
   transform: skewX(332.5deg);
   transform-origin: bottom;
   z-index: -1;
+}
+
+.grid-container::after {
+  content: '';
+  grid-column: 12/17;
+  grid-row: 4;
+  margin-bottom: -0.55em;
+}
+
+.section-title {
+  margin-top: 6.25vh;
+  color: $blue;
+  font-size: 1em;
 }
