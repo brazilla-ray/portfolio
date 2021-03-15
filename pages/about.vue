@@ -5,7 +5,7 @@
       <div class="page-title">
         <h1>about me</h1>
       </div>
-      <article>
+      <article class="main-content">
         <nuxt-content :document="page" />
       </article>
     </div>
