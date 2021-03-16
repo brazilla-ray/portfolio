@@ -105,8 +105,9 @@
 
   .projects,
   .about,
-  .contact {
-    grid-row: 10/17;
+  .contact,
+  .message {
+    grid-row: 10/14;
   }
 
   .projects {
