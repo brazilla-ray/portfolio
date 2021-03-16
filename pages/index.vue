@@ -120,6 +120,11 @@
   .about {
     grid-column: 5/9;
   }
+
+  .message {
+    grid-column: 1/5;
+    padding: 0 1em;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -144,6 +149,11 @@
   .contact {
     grid-column: 11/17;
     grid-row: 12/16;
+  }
+
+  .message {
+    grid-column: 5/10;
+    grid-row: 13;
   }
 
   .with-text h1,
@@ -193,6 +203,11 @@
   .contact {
     grid-column: 7/15;
     grid-row: 14/17;
+  }
+
+  .message {
+    grid-column: 3/6;
+    grid-row: 10;
   }
 }
 </style>
