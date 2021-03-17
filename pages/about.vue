@@ -15,6 +15,7 @@
 
 <script>
 import PageHeaderVue from '~/components/PageHeader.vue'
+
 export default {
   components: { PageHeaderVue },
   async asyncData({ $content }) {
@@ -31,6 +32,10 @@ export default {
 .grid-container::after {
   background-color: $near-white;
   grid-column: 3/8;
+}
+
+.nuxt-content-container {
+  margin-bottom: 4em;
 }
 
 .nuxt-content {
