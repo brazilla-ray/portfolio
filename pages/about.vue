@@ -31,7 +31,7 @@ export default {
 <style lang="scss" scoped>
 .grid-container::after {
   background-color: $near-white;
-  grid-column: 3/8;
+  grid-column: 3/9;
 }
 
 .nuxt-content-container {

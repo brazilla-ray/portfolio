@@ -1,8 +1,10 @@
 <template>
   <div class="grid-container">
     <page-header-vue class="page-header"></page-header-vue>
+    <div class="page-title">
+      <h1>get in touch</h1>
+    </div>
     <div class="content-wrapper">
-      <h1 class="page-title">get in touch</h1>
       <div class="main-content">
         <form class="contact-form" @submit.prevent="sendEmail">
           <label class="form-input-label">Name</label>
@@ -65,6 +67,7 @@ export default {
 <style lang="scss" scoped>
 .grid-container::after {
   background-color: $yellow;
+  grid-column: 10/17;
 }
 
 .contact-form {

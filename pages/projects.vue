@@ -1,8 +1,10 @@
 <template>
   <div class="grid-container">
     <page-header-vue class="page-header"></page-header-vue>
+    <div class="page-title">
+      <h1>projects</h1>
+    </div>
     <div class="content-wrapper">
-      <h1 class="page-title">projects</h1>
       <div class="main-content">
         <section>
           <h2 class="section-title">my website over the years...</h2>
@@ -115,7 +117,7 @@ export default {
 <style lang="scss" scoped>
 .grid-container::after {
   background-color: $blue;
-  grid-column: 8/12;
+  grid-column: 7/12;
 }
 
 article > p {
