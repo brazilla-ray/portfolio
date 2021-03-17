@@ -51,6 +51,10 @@ article {
   grid-row: 4;
 }
 
+.page-title > h1 {
+  display: none;
+}
+
 .content-wrapper {
   grid-column: 3/15;
   grid-row: 5;
