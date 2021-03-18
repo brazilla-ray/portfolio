@@ -8,14 +8,12 @@
       <article class="main-content">
         <section>
           <h2>art</h2>
-          <br />
           <p>
             The first site I built for my artwork was pretty basic: HTML, CSS,
             and a little JavaScript. I went on to build sites with Drupal, Ruby
             on Rails, and WordPress. There may have been easier ways to go about
             it, but I've always liked making things from scratch.
           </p>
-          <br />
           <figure>
             <a href="https://brazilla-ray.github.io/first-site/">
               <img
@@ -62,7 +60,6 @@
               <code>Ruby on Rails</code>
             </figcaption>
           </figure>
-          <br />
           <p>
             Last summer, I switched my domain to
             <a href="https://williamwhitaker.art">williamwhitaker.art</a>
@@ -71,7 +68,6 @@
             on <a href="https://underscores.me/">_s</a>, as well as my first
             <a href="https://github.com/brazilla-ray/ww-plugin">plugin.</a>
           </p>
-          <br />
           <p>
             I'm currently working on a
             <a href="https://github.com/brazilla-ray/wwa-client">version</a>
@@ -81,9 +77,7 @@
           </p>
         </section>
         <section>
-          <br />
           <h2>other things</h2>
-          <br />
           <p>
             When I got married, I built the website for our wedding.
             <a href="https://brazilla-ray.github.io/wedding-site/">It</a>
@@ -93,9 +87,8 @@
             You can check out some of the things I've made on
             <a href="https://codepen.io/w0whitaker">CodePen</a>, including
             <a href="https://codepen.io/collection/DKwbKa">this</a> collection
-            that was a picked pen a while back.
+            that was featured a while back.
           </p>
-          <br />
           <figure>
             <img src="~/static/codePen.png" alt="CodePen" class="screenshot" />
             <aside>Exciting!</aside>
