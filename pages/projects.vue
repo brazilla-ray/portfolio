@@ -113,16 +113,36 @@ export default {
   grid-column: 7/12;
 }
 
-article > p {
-  margin-top: 35px;
+section {
+  margin-bottom: 2em;
 }
 
-article > p > a {
-  color: #56b7eb;
+section > p {
+  margin-top: 2em;
+  line-height: 1.5;
+}
+
+figure {
+  font-size: 0.75em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 4em;
+}
+
+figure img {
+  align-self: center;
+}
+
+figcaption {
+  margin-top: 1em;
+}
+
+figcaption > aside {
+  font-style: italic;
 }
 
 .screenshot {
-  width: 250px;
-  padding: 3px;
+  max-width: 250px;
 }
 </style>
