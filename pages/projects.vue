@@ -93,6 +93,9 @@
             <img src="~/static/codePen.png" alt="CodePen" class="screenshot" />
             <aside>Exciting!</aside>
           </figure>
+          <p>
+            I'm also on <a href="https://github.com/brazilla-ray">github</a>.
+          </p>
         </section>
       </article>
     </div>
