@@ -68,6 +68,17 @@
             on <a href="https://underscores.me/">_s</a>, as well as my first
             <a href="https://github.com/brazilla-ray/ww-plugin">plugin.</a>
           </p>
+          <figure>
+            <img
+              src="~/static/current_site.png"
+              class="screenshot"
+              alt="mrwilliamwhitaker.com screenshot"
+            />
+            <figcaption>
+              <aside>c.2015</aside>
+              <code>Ruby on Rails</code>
+            </figcaption>
+          </figure>
           <p>
             I'm currently working on a
             <a href="https://github.com/brazilla-ray/wwa-client">version</a>
@@ -147,5 +158,38 @@ figcaption > aside {
 
 .screenshot {
   max-width: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  article {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  figure {
+    flex: 0 0 43%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section > h2 {
+    flex: 1 0 90%;
+  }
+
+  section > p {
+    flex: 0 1 25%;
+  }
+
+  figure {
+    flex: 0 0 33%;
+    margin-top: 3em;
+  }
 }
 </style>
