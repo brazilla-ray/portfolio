@@ -17,7 +17,7 @@
           <figure>
             <a href="https://brazilla-ray.github.io/first-site/">
               <img
-                src="~/static/first_site.png"
+                src="~/static/first_site.jpg"
                 class="screenshot"
                 alt="My first website"
               />
@@ -29,7 +29,7 @@
           </figure>
           <figure>
             <img
-              src="~/static/mrww_v1.png"
+              src="~/static/mrww_v1.jpg"
               class="screenshot"
               alt="mrwilliamwhitaker.com screenshot"
             />
@@ -40,7 +40,7 @@
           </figure>
           <figure>
             <img
-              src="~/static/mrww_v2.png"
+              src="~/static/mrww_v2.jpg"
               class="screenshot"
               alt="mrwilliamwhitaker.com screenshot"
             />
@@ -51,7 +51,7 @@
           </figure>
           <figure>
             <img
-              src="~/static/mrww_v3.png"
+              src="~/static/mrww_v3.jpg"
               class="screenshot"
               alt="mrwilliamwhitaker.com screenshot"
             />
@@ -70,7 +70,7 @@
           </p>
           <figure>
             <img
-              src="~/static/current_site.png"
+              src="~/static/current_site.jpg"
               class="screenshot"
               alt="mrwilliamwhitaker.com screenshot"
             />
@@ -102,7 +102,6 @@
           </p>
           <figure>
             <img src="~/static/codePen.png" alt="CodePen" class="screenshot" />
-            <aside>Exciting!</aside>
           </figure>
           <p>
             I'm also on <a href="https://github.com/brazilla-ray">github</a>.
@@ -146,6 +145,8 @@ figure {
 
 figure img {
   align-self: center;
+  border: 2px solid $near-white-quarter-trans;
+  border-radius: 5%;
 }
 
 figcaption {
@@ -158,6 +159,7 @@ figcaption > aside {
 
 .screenshot {
   max-width: 250px;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -185,11 +187,16 @@ figcaption > aside {
 
   section > p {
     flex: 0 1 25%;
+    margin-top: 3em;
   }
 
   figure {
     flex: 0 0 33%;
     margin-top: 3em;
+  }
+
+  figure img {
+    align-self: flex-start;
   }
 }
 </style>
