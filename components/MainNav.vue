@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex-container flex-column">
+  <nav class="flex-container flex-column mt-1">
     <NuxtLink to="/about">about</NuxtLink>
     <NuxtLink to="/projects">projects</NuxtLink>
     <NuxtLink to="/contact">contact</NuxtLink>

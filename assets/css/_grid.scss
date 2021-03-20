@@ -2,3 +2,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, 1em);
 }
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.indented {
+  grid-column: 2 / -1;
+}

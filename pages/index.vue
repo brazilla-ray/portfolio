@@ -1,10 +1,12 @@
 <template>
-  <div class="content">
-    <header class="flex-container flex-row">
-      <header-vue></header-vue>
-      <sub-header-vue></sub-header-vue>
-    </header>
-    <div>
+  <div class="grid-container">
+    <div class="indented">
+      <header class="flex-container flex-row">
+        <header-vue></header-vue>
+        <sub-header-vue></sub-header-vue>
+      </header>
+    </div>
+    <div class="full-width">
       <main-nav-vue></main-nav-vue>
     </div>
   </div>

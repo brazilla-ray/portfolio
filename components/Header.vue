@@ -1,5 +1,5 @@
 <template>
-  <div class="heading">
+  <div class="mt-1">
     <NuxtLink to="/">
       <h1 class="title large">william whitaker</h1>
     </NuxtLink>

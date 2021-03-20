@@ -1,7 +1,11 @@
 <template>
-  <div class="content">
-    <header-vue></header-vue>
-    <main-nav-vue></main-nav-vue>
+  <div class="grid-container">
+    <div class="indented">
+      <header-vue></header-vue>
+    </div>
+    <div class="full-width">
+      <main-nav-vue></main-nav-vue>
+    </div>
   </div>
 </template>
 

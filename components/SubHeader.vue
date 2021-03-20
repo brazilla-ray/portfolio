@@ -1,5 +1,5 @@
 <template>
-  <div class="sub-heading">
+  <div class="mt-1">
     <h2 class="title sub">front end web,</h2>
   </div>
 </template>
