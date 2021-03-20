@@ -42,6 +42,7 @@ export default {
       '~/assets/css/_colors.scss',
       '~/assets/css/_flex.scss',
       '~/assets/css/_typography.scss',
+      '~/assets/css/_layout.scss',
     ],
   },
 

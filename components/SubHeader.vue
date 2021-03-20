@@ -1,6 +1,6 @@
 <template>
-  <div class="banding">
-    <h1 class="title large">william whitaker</h1>
+  <div class="sub-heading">
+    <h2 class="title sub">front end web,</h2>
   </div>
 </template>
 
