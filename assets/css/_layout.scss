@@ -1,8 +1,8 @@
 .content {
-  margin: 1em 1em 0;
+  grid-column: 1 / -1;
 }
 
-.banding {
+.heading {
   flex: 1 0 auto;
 }
 

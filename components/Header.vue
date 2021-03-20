@@ -1,5 +1,5 @@
 <template>
-  <div class="banding">
+  <div class="heading">
     <h1 class="title large">william whitaker</h1>
   </div>
 </template>

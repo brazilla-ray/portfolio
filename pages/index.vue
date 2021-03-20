@@ -1,6 +1,6 @@
 <template>
-  <div class="grid-container">
-    <header class="flex-container content">
+  <div class="content">
+    <header class="flex-container">
       <header-vue></header-vue>
       <sub-header-vue></sub-header-vue>
     </header>
@@ -18,4 +18,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+header {
+  margin: 1em 1em 0;
+}
+</style>
