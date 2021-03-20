@@ -1,45 +1,18 @@
 <template>
-  <div class="grid-container">
-    <main-nav-vue class="page-header"></main-nav-vue>
-    <div class="page-title">
-      <h1>get in touch</h1>
-    </div>
-    <div class="content-wrapper">
-      <div class="main-content">
-        <form class="contact-form" @submit.prevent="sendEmail">
-          <label class="form-input-label">Name</label>
-          <input
-            class="form-input"
-            type="text"
-            name="user_name"
-            placeholder="name"
-          />
-          <label class="form-input-label">Email</label>
-          <input
-            class="form-input"
-            type="email"
-            name="user_email"
-            placeholder="email"
-          />
-          <label class="form-input-label">Message</label>
-          <textarea
-            class="message-input"
-            name="message"
-            placeholder="type your message here"
-          ></textarea>
-          <input class="message-submit" type="submit" value="Send" />
-        </form>
-      </div>
-    </div>
+  <div class="content">
+    <header-vue></header-vue>
+    <main-nav-vue></main-nav-vue>
   </div>
 </template>
 
 <script>
 import emailjs from 'emailjs-com'
+import HeaderVue from '~/components/Header.vue'
 import MainNavVue from '~/components/MainNav.vue'
 
 export default {
   components: {
+    HeaderVue,
     MainNavVue,
   },
   methods: {

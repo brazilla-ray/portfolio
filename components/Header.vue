@@ -1,6 +1,8 @@
 <template>
   <div class="heading">
-    <h1 class="title large">william whitaker</h1>
+    <NuxtLink to="/">
+      <h1 class="title large">william whitaker</h1>
+    </NuxtLink>
   </div>
 </template>
 
@@ -8,4 +10,9 @@
 export default {}
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.nuxt-link-active,
+.nuxt-link-exact-active {
+  text-decoration: none;
+}
+</style>

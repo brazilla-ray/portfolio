@@ -23,8 +23,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-header {
-  margin: 1em 1em 0;
-}
-</style>
+<style lang="scss" scoped></style>
