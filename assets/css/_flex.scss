@@ -1,5 +1,11 @@
 .flex-container {
   display: flex;
+}
+
+.flex-row {
   flex-flow: row wrap;
-  justify-content: center;
+}
+
+.flex-column {
+  flex-flow: column wrap;
 }

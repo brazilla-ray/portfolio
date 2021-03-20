@@ -1,6 +1,6 @@
 <template>
   <div class="grid-container">
-    <page-header-vue class="page-header"></page-header-vue>
+    <main-nav-vue class="page-header"></main-nav-vue>
     <div class="page-title">
       <h1>get in touch</h1>
     </div>
@@ -36,11 +36,11 @@
 
 <script>
 import emailjs from 'emailjs-com'
-import PageHeaderVue from '~/components/PageHeader.vue'
+import MainNavVue from '~/components/MainNav.vue'
 
 export default {
   components: {
-    PageHeaderVue,
+    MainNavVue,
   },
   methods: {
     sendEmail: (e) => {

@@ -1,6 +1,6 @@
 <template>
   <div class="grid-container">
-    <page-header-vue class="page-header"></page-header-vue>
+    <main-nav-vue class="page-header"></main-nav-vue>
     <div class="page-title">
       <h1>about me</h1>
     </div>
@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import PageHeaderVue from '~/components/PageHeader.vue'
+import MainNavVue from '~/components/MainNav.vue'
 
 export default {
-  components: { PageHeaderVue },
+  components: { MainNavVue },
   async asyncData({ $content }) {
     const page = await $content('about').fetch()
 

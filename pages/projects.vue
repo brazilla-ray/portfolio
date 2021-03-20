@@ -1,6 +1,6 @@
 <template>
   <div class="grid-container">
-    <page-header-vue class="page-header"></page-header-vue>
+    <main-nav-vue class="page-header"></main-nav-vue>
     <div class="page-title">
       <h1>projects</h1>
     </div>
@@ -113,10 +113,10 @@
 </template>
 
 <script>
-import PageHeaderVue from '~/components/PageHeader.vue'
+import MainNavVue from '~/components/MainNav.vue'
 
 export default {
-  components: { PageHeaderVue },
+  components: { MainNavVue },
 }
 </script>
 
