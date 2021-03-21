@@ -2,7 +2,7 @@
   <div class="grid-container">
     <div class="indented">
       <header class="flex-container flex-row">
-        <header-vue></header-vue>
+        <header-vue site-title="william whitaker"></header-vue>
         <sub-header-vue></sub-header-vue>
       </header>
     </div>
