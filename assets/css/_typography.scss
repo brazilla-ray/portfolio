@@ -9,3 +9,15 @@
 .sub {
   font-size: 1.5rem;
 }
+
+.section-title,
+.section-title > a {
+  color: $near-black;
+  font-size: 2.25rem;
+}
+
+.link {
+  color: $blue;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid $blue;
+}

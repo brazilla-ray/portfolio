@@ -17,6 +17,12 @@ html {
   margin: 0;
 }
 
+/** override browser styling of links **/
+a {
+  text-decoration: none;
+  color: $near-white;
+}
+
 body {
   background-color: $near-black;
 }
