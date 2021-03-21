@@ -12,13 +12,6 @@
     <NuxtLink to="/contact" class="grid-boxes with-text contact">
       <h2>contact</h2>
     </NuxtLink>
-    <div class="grid-boxes message">
-      <h3>work in progress:</h3>
-      <p>
-        I have decided to publish this site 'as-is', even though it's not
-        'ready'.
-      </p>
-    </div>
   </div>
 </template>
 
