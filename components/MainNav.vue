@@ -1,28 +1,34 @@
 <template>
   <nav class="mt-1">
     <div
-      v-if="currentPageName === 'about'"
-      class="flex-container flex-centered box about"
+      v-if="currentPageName === 'about' || currentPageName === 'index'"
+      class="flex-container flex-centered box about section-title mt-1"
     >
-      <h2>about</h2>
+      <NuxtLink to="/about">
+        <h2>about</h2>
+      </NuxtLink>
     </div>
     <div v-else class="flex-container flex-centered box">
       <NuxtLink to="/about" class="link">about</NuxtLink>
     </div>
     <div
-      v-if="currentPageName === 'projects'"
-      class="flex-container flex-centered box projects"
+      v-if="currentPageName === 'projects' || currentPageName === 'index'"
+      class="flex-container flex-centered box projects section-title mt-1"
     >
-      <h2>projects</h2>
+      <NuxtLink to="/projects">
+        <h2>projects</h2>
+      </NuxtLink>
     </div>
     <div v-else class="flex-container flex-centered box">
       <NuxtLink to="/projects" class="link">projects</NuxtLink>
     </div>
     <div
-      v-if="currentPageName === 'contact'"
-      class="flex-container flex-centered box contact"
+      v-if="currentPageName === 'contact' || currentPageName === 'index'"
+      class="flex-container flex-centered box contact section-title mt-1"
     >
-      <h2>contact</h2>
+      <NuxtLink to="/contact">
+        <h2>contact</h2>
+      </NuxtLink>
     </div>
     <div v-else class="flex-container flex-centered box">
       <NuxtLink to="/contact" class="link">contact</NuxtLink>
@@ -44,7 +50,7 @@ export default {
 .box {
   width: 150px;
   height: 150px;
-  padding-left: 1em;
+  padding-left: 1rem;
 }
 
 .about {

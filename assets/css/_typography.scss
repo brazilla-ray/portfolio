@@ -11,9 +11,10 @@
 }
 
 .section-title,
-.section-title > a {
+.section-title > a,
+.section-title h2 {
   color: $near-black;
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 .link {
