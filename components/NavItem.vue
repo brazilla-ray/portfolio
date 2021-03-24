@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex-container">
     <div
       v-if="currentPageName === pageName || currentPageName === 'index'"
       :class="[pageName, classList]"
@@ -11,6 +11,11 @@
     <div v-else :class="classList">
       <NuxtLink :to="{ path: pageName }" class="link">{{ pageName }}</NuxtLink>
     </div>
+    <div
+      v-if="currentPageName === 'index'"
+      :class="[pageName]"
+      class="shadow-box mt-1"
+    ></div>
   </div>
 </template>
 
@@ -40,6 +45,11 @@ export default {
   width: 150px;
   height: 150px;
   padding-left: 1rem;
+}
+
+.shadow-box {
+  opacity: 0.35;
+  flex: 1 0 auto;
 }
 .about {
   background-color: $near-white;

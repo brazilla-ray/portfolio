@@ -1,5 +1,5 @@
 <template>
-  <nav class="mt-1">
+  <nav>
     <nav-item-vue page-name="about"></nav-item-vue>
     <nav-item-vue page-name="projects"></nav-item-vue>
     <nav-item-vue page-name="contact"></nav-item-vue>
