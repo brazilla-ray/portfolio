@@ -22,11 +22,6 @@ export default {
       page,
     }
   },
-  data() {
-    return {
-      aboutPage: true,
-    }
-  },
 }
 </script>
 

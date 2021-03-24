@@ -1,36 +1,33 @@
 <template>
   <nav class="mt-1">
-    <div
+    <NuxtLink
       v-if="currentPageName === 'about' || currentPageName === 'index'"
+      to="/about"
       class="flex-container flex-centered box about section-title mt-1"
     >
-      <NuxtLink to="/about">
-        <h2>about</h2>
-      </NuxtLink>
-    </div>
-    <div v-else class="flex-container flex-centered box">
+      <h2>about</h2>
+    </NuxtLink>
+    <div v-else class="flex-container flex-centered box mt-1">
       <NuxtLink to="/about" class="link">about</NuxtLink>
     </div>
-    <div
+    <NuxtLink
       v-if="currentPageName === 'projects' || currentPageName === 'index'"
+      to="/projects"
       class="flex-container flex-centered box projects section-title mt-1"
     >
-      <NuxtLink to="/projects">
-        <h2>projects</h2>
-      </NuxtLink>
-    </div>
-    <div v-else class="flex-container flex-centered box">
+      <h2>projects</h2>
+    </NuxtLink>
+    <div v-else class="flex-container flex-centered box mt-1">
       <NuxtLink to="/projects" class="link">projects</NuxtLink>
     </div>
-    <div
+    <NuxtLink
       v-if="currentPageName === 'contact' || currentPageName === 'index'"
+      to="/contact"
       class="flex-container flex-centered box contact section-title mt-1"
     >
-      <NuxtLink to="/contact">
-        <h2>contact</h2>
-      </NuxtLink>
-    </div>
-    <div v-else class="flex-container flex-centered box">
+      <h2>contact</h2>
+    </NuxtLink>
+    <div v-else class="flex-container flex-centered box mt-1">
       <NuxtLink to="/contact" class="link">contact</NuxtLink>
     </div>
   </nav>
