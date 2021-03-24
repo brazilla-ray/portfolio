@@ -50,6 +50,7 @@ export default {
 .shadow-box {
   opacity: 0.35;
   flex: 1 0 auto;
+  margin-right: -1em;
 }
 .about {
   background-color: $near-white;

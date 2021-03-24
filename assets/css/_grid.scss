@@ -1,7 +1,8 @@
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 1fr);
-  grid-template-rows: 120px 166px 1em 150px 1em 150px;
+  grid-template-columns: repeat(auto-fill, 1em);
+  grid-template-rows: 1fr 166px 1em 150px 1em 150px;
+  overflow: hidden;
 }
 
 .full-width {
