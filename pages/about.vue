@@ -6,8 +6,11 @@
     <div class="full-width">
       <main-nav-vue></main-nav-vue>
     </div>
-    <div class="content content-wrapper mt-1">
-      <main-content-vue></main-content-vue>
+    <div class="content behind">
+      <main-content-vue
+        page-style="about-content"
+        class="mt-1"
+      ></main-content-vue>
     </div>
   </div>
 </template>
@@ -29,12 +32,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.content-wrapper {
-  background-color: $near-white-quarter-trans;
-  margin-right: -1em;
-  padding: 1rem 2rem;
-  border-left: 6px solid $near-black;
-  z-index: -1;
-}
-</style>
+<style lang="scss" scoped></style>

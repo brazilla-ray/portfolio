@@ -6,6 +6,12 @@
     <div class="full-width">
       <main-nav-vue></main-nav-vue>
     </div>
+    <div class="content behind">
+      <main-content-vue
+        page-style="contact-content"
+        class="mt-1"
+      ></main-content-vue>
+    </div>
   </div>
 </template>
 
@@ -13,11 +19,13 @@
 import emailjs from 'emailjs-com'
 import HeaderVue from '~/components/Header.vue'
 import MainNavVue from '~/components/MainNav.vue'
+import MainContentVue from '~/components/MainContent.vue'
 
 export default {
   components: {
     HeaderVue,
     MainNavVue,
+    MainContentVue,
   },
   methods: {
     sendEmail: (e) => {
