@@ -1,12 +1,13 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 1em);
-  grid-template-rows: 1fr 166px 1em 150px 1em 150px;
+  grid-template-rows: 1fr 166px 1em 150px 1em 150px 1fr;
   overflow: hidden;
 }
 
 .full-width {
   grid-column: 1 / -1;
+  grid-row: 2;
 }
 
 .indented {
