@@ -41,7 +41,7 @@ export default {
 
 <style lang="scss" scoped>
 .secondary-nav {
-  margin-top: -1.5rem;
+  margin-top: -2rem;
   grid-column: 12;
   grid-row: 3;
 }

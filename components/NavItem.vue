@@ -51,6 +51,7 @@ export default {
   opacity: 0.25;
   flex: 1 0 auto;
   margin-right: -1em;
+  z-index: -99;
 }
 .about {
   background-color: $near-white;
