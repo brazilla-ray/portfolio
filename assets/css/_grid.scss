@@ -10,6 +10,11 @@
   grid-row: 2;
 }
 
+.content {
+  grid-column: 10/-1;
+  grid-row: 2/-1;
+}
+
 .indented {
   grid-column: 2 / -1;
 }
