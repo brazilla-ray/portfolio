@@ -48,7 +48,7 @@ export default {
 }
 
 .shadow-box {
-  opacity: 0.35;
+  opacity: 0.25;
   flex: 1 0 auto;
   margin-right: -1em;
 }
