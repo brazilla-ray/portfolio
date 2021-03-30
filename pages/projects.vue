@@ -7,10 +7,9 @@
       <main-nav-vue></main-nav-vue>
     </div>
     <div class="content behind">
-      <main-content-vue
-        page-style="projects-content"
-        class="mt-1"
-      ></main-content-vue>
+      <main-content-vue page-style="projects-content" class="mt-1">
+        <test-vue></test-vue>
+      </main-content-vue>
     </div>
   </div>
 </template>
@@ -19,9 +18,10 @@
 import HeaderVue from '~/components/Header.vue'
 import MainNavVue from '~/components/MainNav.vue'
 import MainContentVue from '~/components/MainContent.vue'
+import TestVue from '~/components/Test.vue'
 
 export default {
-  components: { HeaderVue, MainNavVue, MainContentVue },
+  components: { HeaderVue, MainNavVue, MainContentVue, TestVue },
 }
 </script>
 
