@@ -8,7 +8,7 @@
     </div>
     <div class="content behind">
       <main-content-vue page-style="about-content" class="mt-1">
-        <test-vue></test-vue>
+        <about-content-vue></about-content-vue>
       </main-content-vue>
     </div>
   </div>
@@ -18,10 +18,10 @@
 import HeaderVue from '~/components/Header.vue'
 import MainNavVue from '~/components/MainNav.vue'
 import MainContentVue from '~/components/MainContent.vue'
-import TestVue from '~/components/Test.vue'
+import AboutContentVue from '~/components/AboutContent.vue'
 
 export default {
-  components: { HeaderVue, MainNavVue, MainContentVue, TestVue },
+  components: { HeaderVue, MainNavVue, MainContentVue, AboutContentVue },
   async asyncData({ $content }) {
     const page = await $content('about').fetch()
 

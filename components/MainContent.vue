@@ -18,10 +18,11 @@ export default {
 <style lang="scss" scoped>
 .content-wrapper {
   margin-right: -1em;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   border-left: 6px solid $near-black;
   border-bottom: 16px solid $near-black;
   height: 100%;
+  overflow: hidden;
 }
 
 .about-content {
