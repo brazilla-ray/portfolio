@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, 15px);
   grid-template-rows: repeat(auto-fill, 150px);
-  row-gap: 1rem;
+  grid-row-gap: 1rem;
   overflow: hidden;
 }
 
@@ -11,8 +11,7 @@
 }
 
 .content {
-  grid-column: 10/-1;
-  grid-row: 2/9;
+  grid-column: 11/-1;
 }
 
 .indented {

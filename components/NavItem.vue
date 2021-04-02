@@ -1,9 +1,19 @@
 <template>
   <div class="grid-container">
     <NuxtLink
+      v-if="currentPageName === 'index'"
       :to="{ path: pageName }"
       :class="[pageName]"
       class="box flex-container flex-centered"
+    >
+      <h2 class="section-title">{{ pageName }}</h2>
+    </NuxtLink>
+
+    <NuxtLink
+      v-else
+      :to="{ path: pageName }"
+      :class="[pageName]"
+      class="box flex-container flex-centered link"
     >
       <h2 class="section-title">{{ pageName }}</h2>
     </NuxtLink>

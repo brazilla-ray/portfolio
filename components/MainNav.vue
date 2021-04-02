@@ -1,11 +1,11 @@
 <template>
   <nav class="grid-container">
     <nav-item-vue page-name="about" class="row-1 col-span-10"></nav-item-vue>
-    <div class="shadow-box about"></div>
+    <div v-if="currentPageName === 'index'" class="shadow-box about"></div>
     <nav-item-vue page-name="projects" class="row-2 col-span-10"></nav-item-vue>
-    <div class="shadow-box projects"></div>
+    <div v-if="currentPageName === 'index'" class="shadow-box projects"></div>
     <nav-item-vue page-name="contact" class="row-3 col-span-10"></nav-item-vue>
-    <div class="shadow-box contact"></div>
+    <div v-if="currentPageName === 'index'" class="shadow-box contact"></div>
   </nav>
 </template>
 
@@ -14,6 +14,11 @@ import NavItemVue from '~/components/NavItem.vue'
 
 export default {
   components: { NavItemVue },
+  computed: {
+    currentPageName() {
+      return this.$route.name
+    },
+  },
 }
 </script>
 

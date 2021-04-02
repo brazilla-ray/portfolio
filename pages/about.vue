@@ -3,11 +3,11 @@
     <div class="indented">
       <header-vue site-title="ww"></header-vue>
     </div>
-    <div class="full-width">
+    <div class="full-width row-2">
       <main-nav-vue></main-nav-vue>
     </div>
-    <div class="content behind">
-      <main-content-vue page-style="about-content" class="mt-1">
+    <div class="content row-2">
+      <main-content-vue page-style="about-content">
         <about-content-vue></about-content-vue>
       </main-content-vue>
     </div>
