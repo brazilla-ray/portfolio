@@ -1,6 +1,10 @@
 <template>
   <div class="grid-container">
-    <NuxtLink :to="{ path: pageName }" :class="[pageName]" class="box">
+    <NuxtLink
+      :to="{ path: pageName }"
+      :class="[pageName]"
+      class="box flex-container flex-centered"
+    >
       <h2 class="section-title">{{ pageName }}</h2>
     </NuxtLink>
   </div>
