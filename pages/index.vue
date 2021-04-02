@@ -6,10 +6,10 @@
         <sub-header-vue></sub-header-vue>
       </header>
     </div>
-    <div class="full-width">
+    <div class="full-width row-2">
       <main-nav-vue></main-nav-vue>
     </div>
-    <div class="secondary-nav">
+    <div class="secondary-nav row-2 col-13">
       <nav class="flex-container flex-column">
         <a href="https://twitter.com/w0whitaker" class="link">twitter</a>
         <a href="https://github.com/brazilla-ray" class="link mt-2">github</a>
@@ -41,8 +41,6 @@ export default {
 
 <style lang="scss" scoped>
 .secondary-nav {
-  margin-top: -2rem;
-  grid-column: 12;
-  grid-row: 3;
+  margin-top: 6.75rem;
 }
 </style>

@@ -1,21 +1,8 @@
 <template>
-  <div class="flex-container">
-    <div
-      v-if="currentPageName === pageName || currentPageName === 'index'"
-      :class="[pageName, classList]"
-    >
-      <NuxtLink :to="{ path: pageName }">
-        <h2 class="section-title">{{ pageName }}</h2>
-      </NuxtLink>
-    </div>
-    <div v-else :class="classList">
-      <NuxtLink :to="{ path: pageName }" class="link">{{ pageName }}</NuxtLink>
-    </div>
-    <div
-      v-if="currentPageName === 'index'"
-      :class="[pageName]"
-      class="shadow-box mt-1"
-    ></div>
+  <div class="grid-container">
+    <NuxtLink :to="{ path: pageName }" :class="[pageName]" class="box">
+      <h2 class="section-title">{{ pageName }}</h2>
+    </NuxtLink>
   </div>
 </template>
 
@@ -29,7 +16,7 @@ export default {
   },
   data() {
     return {
-      classList: ['flex-container', 'flex-centered', 'box', 'mt-1'],
+      classList: ['flex-container', 'flex-centered', 'box'],
     }
   },
   computed: {
@@ -45,23 +32,5 @@ export default {
   width: 150px;
   height: 150px;
   padding-left: 1rem;
-}
-
-.shadow-box {
-  opacity: 0.25;
-  flex: 1 0 auto;
-  margin-right: -1em;
-  z-index: -99;
-}
-.about {
-  background-color: $near-white;
-}
-
-.projects {
-  background-color: $blue;
-}
-
-.contact {
-  background-color: $yellow;
 }
 </style>
