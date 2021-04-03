@@ -1,23 +1,21 @@
 <template>
-  <div class="grid-container">
-    <NuxtLink
-      v-if="currentPageName === 'index'"
-      :to="{ path: pageName }"
-      :class="[pageName]"
-      class="box flex-container flex-centered"
+  <NuxtLink
+    :to="{ path: pageName }"
+    :class="[
+      currentPageName === 'index' || currentPageName === pageName
+        ? pageName
+        : '',
+    ]"
+    class="grid-container_box"
+  >
+    <h2
+      v-if="currentPageName === 'index' || currentPageName === pageName"
+      class="section-title col-2 row-4-span-2"
     >
-      <h2 class="section-title">{{ pageName }}</h2>
-    </NuxtLink>
-
-    <NuxtLink
-      v-else
-      :to="{ path: pageName }"
-      :class="[pageName]"
-      class="box flex-container flex-centered link"
-    >
-      <h2 class="section-title">{{ pageName }}</h2>
-    </NuxtLink>
-  </div>
+      {{ pageName }}
+    </h2>
+    <span v-else class="link col-2 row-4-span-2">{{ pageName }}</span>
+  </NuxtLink>
 </template>
 
 <script>
@@ -28,11 +26,6 @@ export default {
       default: '',
     },
   },
-  data() {
-    return {
-      classList: ['flex-container', 'flex-centered', 'box'],
-    }
-  },
   computed: {
     currentPageName() {
       return this.$route.name
@@ -41,10 +34,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.box {
-  width: 150px;
-  height: 150px;
-  padding-left: 1rem;
-}
-</style>
+<style lang="scss" scoped></style>
