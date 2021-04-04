@@ -1,7 +1,8 @@
 <template>
   <div class="mt-1">
     <NuxtLink to="/">
-      <h1 class="title large">{{ siteTitle }}</h1>
+      <h1 class="title large">william whitaker</h1>
+      <p class="title sub mt-1">{{ tagLine }}</p>
     </NuxtLink>
   </div>
 </template>
@@ -9,9 +10,9 @@
 <script>
 export default {
   props: {
-    siteTitle: {
+    tagLine: {
       type: String,
-      default: 'william whitaker',
+      default: '',
     },
   },
 }

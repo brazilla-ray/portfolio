@@ -2,8 +2,7 @@
   <div class="grid-container">
     <div class="indented">
       <header class="flex-container flex-row">
-        <header-vue site-title="william whitaker"></header-vue>
-        <sub-header-vue></sub-header-vue>
+        <header-vue tag-line="front end web,"></header-vue>
       </header>
     </div>
     <div class="full-width row-2">
@@ -28,12 +27,10 @@
 
 <script>
 import HeaderVue from '~/components/Header.vue'
-import SubHeaderVue from '~/components/SubHeader.vue'
 import MainNavVue from '~/components/MainNav.vue'
 export default {
   components: {
     HeaderVue,
-    SubHeaderVue,
     MainNavVue,
   },
 }
