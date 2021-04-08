@@ -1,7 +1,7 @@
 <template>
   <div class="grid-container">
     <div class="indented">
-      <header-vue site-title="ww"></header-vue>
+      <header-vue tag-line="loves getting mail"></header-vue>
     </div>
     <div class="full-width row-2">
       <main-nav-vue></main-nav-vue>
