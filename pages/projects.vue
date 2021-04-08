@@ -1,14 +1,14 @@
 <template>
   <div class="grid-container">
     <div class="indented">
-      <header-vue site-title="ww"></header-vue>
+      <header-vue tag-line=""></header-vue>
     </div>
-    <div class="full-width">
+    <div class="full-width row-2">
       <main-nav-vue></main-nav-vue>
     </div>
-    <div class="content behind">
-      <main-content-vue page-style="projects-content" class="mt-1">
-        <test-vue></test-vue>
+    <div class="content row-2">
+      <main-content-vue page-style="projects-content">
+        <projects-content-vue></projects-content-vue>
       </main-content-vue>
     </div>
   </div>
@@ -18,10 +18,10 @@
 import HeaderVue from '~/components/Header.vue'
 import MainNavVue from '~/components/MainNav.vue'
 import MainContentVue from '~/components/MainContent.vue'
-import TestVue from '~/components/Test.vue'
+import ProjectsContentVue from '~/components/ProjectsContent.vue'
 
 export default {
-  components: { HeaderVue, MainNavVue, MainContentVue, TestVue },
+  components: { HeaderVue, MainNavVue, MainContentVue, ProjectsContentVue },
 }
 </script>
 
