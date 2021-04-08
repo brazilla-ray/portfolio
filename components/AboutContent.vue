@@ -1,33 +1,82 @@
 <template>
-  <div>
-    <img src="~/static/self.png" alt="self-portrait" class="inline-image" />
-    <h3>
-      <span class="terminal-prompt">$</span>&nbsp;<span class="command"
-        >whoami</span
-      >
-    </h3>
-    <p>
-      Hi! I'm a self-taught web developer and an artist. I love learning new
-      things and solving problems.
-    </p>
-    <p>
-      I live in the District of Columbia, which is not a state, but definitely
-      should be <a href="https://www.the51st.org/" class="link">one</a>.
-    </p>
-    <p>I like tacos, but my real passion is pizza.</p>
-  </div>
+  <article>
+    <section>
+      <h3>
+        <span class="terminal-prompt">$</span>&nbsp;<span class="command"
+          >whoami</span
+        >
+      </h3>
+      <p>hi! I'm a self-taught web developer who writes:</p>
+      <dl>
+        <dt>clean,</dt>
+        <dt class="ml-1">semantic,</dt>
+        <dt class="ml-2">accessible</dt>
+        <dd class="ml-3">html</dd>
+        <dd class="ml-3">css</dd>
+        <dd class="ml-3">javascript</dd>
+      </dl>
+      <p>
+        I live in the district of columbia where sometimes I
+        <a href="https://williamwhitaker.art" class="link">make art</a>.
+      </p>
+    </section>
+    <section>
+      <h3>
+        <span class="terminal-prompt">$</span>&nbsp;<span class="command"
+          >history</span
+        >
+      </h3>
+      <ul>
+        <li>BFA, painting, rhode island school of design</li>
+        <li>currently working at the national gallery of art</li>
+      </ul>
+    </section>
+    <section>
+      <h3>
+        <span class="terminal-prompt">$</span>&nbsp;<span class="command"
+          >find</span
+        >
+      </h3>
+      <ul>
+        <li>
+          <a href="https://twitter.com/w0whitaker" class="link">twitter</a>
+        </li>
+        <li>
+          <a href="https://github.com/brazilla-ray" class="link">github</a>
+        </li>
+        <li>
+          <a href="https://codepen.io/w0whitaker" class="link">codepen</a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h3>
+        <span class="terminal-prompt">$</span>&nbsp;<span class="command"
+          >more</span
+        >
+      </h3>
+      <p>download <a href="/resume.pdf" download="" class="link">resume</a></p>
+    </section>
+  </article>
 </template>
 
 <style lang="scss" scoped>
-p {
-  margin-top: 1em;
+section {
+  margin-top: 1rem;
 }
-.inline-image {
-  max-width: 150px;
-  margin-top: -1em;
-  margin-left: -1em;
-  // margin: 0 1em 1em 0;
-  float: left;
+
+p,
+ul,
+li {
+  padding: 0.5rem 0;
+}
+
+ul {
+  list-style: none;
+}
+dd::before {
+  content: '-> ';
+  color: $green;
 }
 
 .terminal-prompt {
@@ -35,6 +84,6 @@ p {
 }
 
 .command {
-  color: greenyellow;
+  color: $green;
 }
 </style>
