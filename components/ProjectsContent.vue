@@ -56,6 +56,14 @@
     </section>
     <section class="mt-1">
       <h3>other projects</h3>
+      <h4>
+        <a href="https://brazilla-ray.github.io/pieton/" class="link"
+          >pi&eacute;ton</a
+        >
+      </h4>
+      <p>
+        a CSS color system that's meant to be accessible despite the fancy name.
+      </p>
       <p class="mt-1">other things I've worked on can be found over at:</p>
       <ul class="ml-1">
         <li>
