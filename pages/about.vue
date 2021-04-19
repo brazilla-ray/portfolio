@@ -1,23 +1,27 @@
 <template>
   <div class="grid-container">
-    <page-header-vue class="page-header"></page-header-vue>
-    <div class="page-title">
-      <h1>about me</h1>
+    <div class="indented">
+      <header-vue tag-line="developing aspirations,"></header-vue>
     </div>
-    <div class="content-wrapper">
-      <article class="main-content">
-        <img src="~/static/self.png" alt="self-portrait" class="inline-image" />
-        <nuxt-content :document="page" />
-      </article>
+    <div class="full-width row-2">
+      <main-nav-vue></main-nav-vue>
+    </div>
+    <div class="content row-2">
+      <main-content-vue page-style="about-content">
+        <about-content-vue></about-content-vue>
+      </main-content-vue>
     </div>
   </div>
 </template>
 
 <script>
-import PageHeaderVue from '~/components/PageHeader.vue'
+import HeaderVue from '~/components/Header.vue'
+import MainNavVue from '~/components/MainNav.vue'
+import MainContentVue from '~/components/MainContent.vue'
+import AboutContentVue from '~/components/AboutContent.vue'
 
 export default {
-  components: { PageHeaderVue },
+  components: { HeaderVue, MainNavVue, MainContentVue, AboutContentVue },
   async asyncData({ $content }) {
     const page = await $content('about').fetch()
 
@@ -28,33 +32,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.grid-container::after {
-  background-color: $near-white;
-  grid-column: 3/9;
-}
-
-.nuxt-content-container {
-  margin-bottom: 4em;
-}
-
-.nuxt-content {
-  line-height: 1.5;
-}
-
-.nuxt-content > p > a {
-  color: $blue;
-}
-
-.inline-image {
-  max-width: 31.25vw;
-  margin: 0 1em 1em 0;
-  float: left;
-}
-
-@media screen and (min-width: 568px) {
-  .inline-image {
-    margin: 0 2em 2em 0;
-  }
-}
-</style>
+<style lang="scss" scoped></style>
