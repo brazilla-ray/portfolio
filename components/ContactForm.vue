@@ -20,7 +20,28 @@
 </template>
 
 <script>
-export default {}
+import emailjs from 'emailjs-com'
+export default {
+  methods: {
+    sendEmail: (e) => {
+      emailjs
+        .sendForm(
+          'contact_service',
+          'contact_form',
+          e.target,
+          'user_OPqabWgigbbWbuhIrLAhj'
+        )
+        .then(
+          (result) => {
+            console.log('SUCCESS!', result.status, result.text)
+          },
+          (error) => {
+            console.log('FAILED...', error)
+          }
+        )
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>

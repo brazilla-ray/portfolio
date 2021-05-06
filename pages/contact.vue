@@ -15,7 +15,6 @@
 </template>
 
 <script>
-import emailjs from 'emailjs-com'
 import HeaderVue from '~/components/Header.vue'
 import MainNavVue from '~/components/MainNav.vue'
 import MainContentVue from '~/components/MainContent.vue'
@@ -27,25 +26,6 @@ export default {
     MainNavVue,
     MainContentVue,
     ContactFormVue,
-  },
-  methods: {
-    sendEmail: (e) => {
-      emailjs
-        .sendForm(
-          'contact_service',
-          'contact_form',
-          e.target,
-          'user_OPqabWgigbbWbuhIrLAhj'
-        )
-        .then(
-          (result) => {
-            console.log('SUCCESS!', result.status, result.text)
-          },
-          (error) => {
-            console.log('FAILED...', error)
-          }
-        )
-    },
   },
 }
 </script>
