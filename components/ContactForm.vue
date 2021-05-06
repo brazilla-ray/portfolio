@@ -1,5 +1,5 @@
 <template>
-  <form class="contact-form" @submit.prevent="sendEmail">
+  <form class="contact-form" data-netlify="true">
     <label class="form-input-label">Name</label>
     <input class="form-input" type="text" name="user_name" placeholder="name" />
     <label class="form-input-label">Email</label>
@@ -20,28 +20,7 @@
 </template>
 
 <script>
-import emailjs from 'emailjs-com'
-export default {
-  methods: {
-    sendEmail: (e) => {
-      emailjs
-        .sendForm(
-          'contact_service',
-          'contact_form',
-          e.target,
-          'user_OPqabWgigbbWbuhIrLAhj'
-        )
-        .then(
-          (result) => {
-            console.log('SUCCESS!', result.status, result.text)
-          },
-          (error) => {
-            console.log('FAILED...', error)
-          }
-        )
-    },
-  },
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>
