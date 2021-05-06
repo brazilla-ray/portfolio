@@ -1,5 +1,9 @@
 # portfolio
 
+## This is the code for my portfolio site, [https://williamwhitaker.dev](https://williamwhitaker.dev)
+
+It's built with [NuxtJS](https://nuxtjs.org/), and hosted on [Netlify](https://www.netlify.com/).
+
 ## Build Setup
 
 ```bash

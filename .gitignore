@@ -91,3 +91,6 @@ sw.*
 
 # GitHub repo card
 desktop_screenshot.png
+
+# editor
+*.code-workspace
