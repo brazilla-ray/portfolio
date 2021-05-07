@@ -21,7 +21,12 @@ import MainContentVue from '~/components/MainContent.vue'
 import ProjectsContentVue from '~/components/ProjectsContent.vue'
 
 export default {
-  components: { HeaderVue, MainNavVue, MainContentVue, ProjectsContentVue },
+  components: {
+    HeaderVue,
+    MainNavVue,
+    MainContentVue,
+    ProjectsContentVue,
+  },
 }
 </script>
 

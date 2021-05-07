@@ -21,13 +21,11 @@ import MainContentVue from '~/components/MainContent.vue'
 import AboutContentVue from '~/components/AboutContent.vue'
 
 export default {
-  components: { HeaderVue, MainNavVue, MainContentVue, AboutContentVue },
-  async asyncData({ $content }) {
-    const page = await $content('about').fetch()
-
-    return {
-      page,
-    }
+  components: {
+    HeaderVue,
+    MainNavVue,
+    MainContentVue,
+    AboutContentVue,
   },
 }
 </script>
