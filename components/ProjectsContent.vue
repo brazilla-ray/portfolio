@@ -64,6 +64,10 @@
       <p>
         a CSS color system that's meant to be accessible despite the fancy name.
       </p>
+      <h4>
+        <a href="https://brazilla-ray-pomodoro.netlify.app/">pomodoro timer</a>
+      </h4>
+      <p>a simple pomodoro timer that I made with Vue/Vuex/Nuxt.</p>
       <p class="mt-1">other things I've worked on can be found over at:</p>
       <ul class="ml-1">
         <li>
