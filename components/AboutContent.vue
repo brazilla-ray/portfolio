@@ -27,8 +27,16 @@
         >
       </h3>
       <ul>
-        <li>BFA, painting, rhode island school of design</li>
-        <li>currently working at the national gallery of art</li>
+        <li>
+          <span class="redacted">1997</span> BFA, painting, rhode island school
+          of design
+        </li>
+        <li><span class="redacted">2001</span> art handler</li>
+        <li>
+          <span class="less-redacted">2007</span> started working
+          <a href="https://nga.gov"><span class="link">here</span></a>
+        </li>
+        <li><span class="less-redacted">2009</span> built first website</li>
       </ul>
     </section>
     <section>
@@ -85,5 +93,15 @@ dd::before {
 
 .command {
   color: $green;
+}
+
+.redacted {
+  color: transparent;
+  text-shadow: 0 0 5px #fffff0;
+}
+
+.less-redacted {
+  color: transparent;
+  text-shadow: 0 0 2.5px #fffff0;
 }
 </style>
