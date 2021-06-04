@@ -61,7 +61,7 @@
           >pi&eacute;ton</a
         >
       </h4>
-      <p>
+      <p class="long-line">
         a CSS color system that's meant to be accessible despite the fancy name.
       </p>
       <h4>
@@ -69,16 +69,22 @@
           >pomodoro timer</a
         >
       </h4>
-      <p>a simple pomodoro timer that I made with Vue/Vuex/Nuxt.</p>
-      <p class="mt-1">other things I've worked on can be found over at:</p>
-      <ul class="ml-1">
-        <li>
-          <a href="https://github.com/brazilla-ray" class="link">github</a>
-        </li>
-        <li>
-          <a href="https://codepen.io/w0whitaker" class="link">&amp; codepen</a>
-        </li>
-      </ul>
+      <p class="long-line">
+        a simple pomodoro timer that I made complicated by using Vue/Vuex/Nuxt.
+      </p>
+      <div class="flex-container">
+        <h5>also available:</h5>
+        <ul class="ml-1">
+          <li>
+            <a href="https://github.com/brazilla-ray" class="link">github</a>
+          </li>
+          <li>
+            <a href="https://codepen.io/w0whitaker" class="link"
+              >&amp; codepen</a
+            >
+          </li>
+        </ul>
+      </div>
     </section>
   </article>
 </template>
@@ -99,7 +105,30 @@ ul {
   margin: 0;
 }
 
+li,
+p,
+h4,
+h5 {
+  margin-top: 1.25rem;
+}
+
+h5 {
+  padding-top: 1.75rem;
+}
+
+p {
+  line-height: 2;
+}
+
 img {
   max-width: 150px;
+}
+
+.long-line {
+  max-width: 33.3%;
+}
+
+.flex-container {
+  display: flex;
 }
 </style>
